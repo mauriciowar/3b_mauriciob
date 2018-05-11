@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="279.0" prefWidth="411.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.FXMLDocumentController">
     <children>
-        <Button fx:id="button" layoutX="126" layoutY="90" onAction="#handleButtonAction" text="clique aqui" />
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TextField fx:id="txtResultado" layoutX="29.0" layoutY="213.0" />
+      <TextField fx:id="txtNumero2" layoutX="29.0" layoutY="151.0" />
+      <TextField fx:id="txtNumero1" layoutX="29.0" layoutY="87.0" />
+      <Label layoutX="40.0" layoutY="70.0" text="Numero1" />
+      <Label layoutX="40.0" layoutY="131.0" text="Numero2" />
+      <Label layoutX="40.0" layoutY="196.0" text="Resultado" />
+      <Button fx:id="btnSoma" layoutX="240.0" layoutY="139.0" mnemonicParsing="false" onAction="#soma" text="Soma" />
     </children>
 </AnchorPane>
