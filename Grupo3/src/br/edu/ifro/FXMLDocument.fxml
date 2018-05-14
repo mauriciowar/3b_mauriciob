@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="279.0" prefWidth="411.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="403.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.FXMLDocumentController">
     <children>
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
       <TextField fx:id="txtResultado" layoutX="29.0" layoutY="213.0" />
@@ -17,5 +17,15 @@
       <Label layoutX="40.0" layoutY="131.0" text="Numero2" />
       <Label layoutX="40.0" layoutY="196.0" text="Resultado" />
       <Button fx:id="btnSoma" layoutX="240.0" layoutY="139.0" mnemonicParsing="false" onAction="#soma" text="Soma" />
+      <MenuBar layoutX="4.0" layoutY="2.0" prefHeight="25.0" prefWidth="493.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#AbrirCadastroAluno" text="Alunos" />
+                  <MenuItem mnemonicParsing="false" onAction="#fechar" text="Fechar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
     </children>
 </AnchorPane>
